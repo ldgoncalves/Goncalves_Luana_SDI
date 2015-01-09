@@ -1,0 +1,115 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1343\cocoasubrtf160
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{lower-alpha\})}{\leveltext\leveltemplateid1\'02\'00);}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
+
+\f0\fs22 \cf0 \expnd0\expndtw0\kerning0
+Luana Goncalves\
+January 8, 2015\
+Scalable Data Infrastructures, Section 03\
+Assignment: Problem Solving\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
+
+\b \cf0 \expnd0\expndtw0\kerning0
+A Cat, a Parrot, and a Bag of Seed:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
+
+\b0 \cf0 \expnd0\expndtw0\kerning0
+A man finds himself on a riverbank with a cat, a parrot and a bag of seed. He needs to transport all three to the other side of the river in his boat. However, the boat has room for only the man himself and one other item (either the cat, parrot or seed). In his absence, the cat could eat the parrot, and the parrot would eat the bag of seed. Show how he can get all the passengers to the other side, without leaving the wrong ones alone together.\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
+
+\b \cf0 \expnd0\expndtw0\kerning0
+1)Define the problem\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
+
+\b0 \cf0 \expnd0\expndtw0\kerning0
+The overall goal here is to transport all three passengers over to the other side of the river, however the boat can only take the man and one other passenger. Initial insight  I can offer is that the man can start taking the bag of seed first. \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
+
+\b \cf0 \expnd0\expndtw0\kerning0
+2) Break the problem apart\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
+
+\b0 \cf0 \expnd0\expndtw0\kerning0
+The major constraint here is that the cat can\'92t be alone with the parrot and the parrot can\'92t be alone with the bag of seed. And that goes the same with the other side of the shore. Even if we take bag of seeds first, we have to make sure the next item won\'92t conflict with the bag of seed when the man goes back to get the last item. \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
+
+\b \cf0 \expnd0\expndtw0\kerning0
+3) Identify potential solutions\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
+
+\b0 \cf0 \expnd0\expndtw0\kerning0
+One solution I can think of is that the man starts off with the bag of seeds. He comes back to the shore and take the cat with him. The cat won\'92t be a threat because it won\'92t eat the seeds. His last trip will be the parrot. \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
+
+\b \cf0 \expnd0\expndtw0\kerning0
+4) Evaluate each potential solution\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
+
+\b0 \cf0 \expnd0\expndtw0\kerning0
+The only reason I think this is a probable solution because the items Cat and Seed are not a threat to each other but the cat is to the parrot and the parrot is to the seed. But arranging the departure from the seed, cat, and parrot, guarantees on both ends of the shore that all passengers are safe from each other.\
+5) Choose a solution and develop a plan to implement it.\
+a) Explain the solution in full.\
+b) Describe some test cases you tried out to make sure it works. (You can include\
+drawings and diagrams as part of your explanation as long as they are clearly communicating the solution).\
+\
+Socks in the Dark:\
+There are 20 socks in a drawer: 5 pairs of black socks, 3 pairs of brown and 2 pairs of white. You select the socks in the dark and can check them only after a selection has been made. What is the smallest number of socks you need to select to guarantee getting the following:\
+a) At least one matching pair\
+b) At least one matching pair of each color.\
+\
+Define the problem\
+a) Do this in your own words.\
+b) What insight can you offer into the problem that is not immediately visible from\
+the word problem alone? \
+c) What is the overall goal?\
+2) Break the problem apart\
+a) What are the constraints? b) What are the sub-goals?\
+3) Identify potential solutions\
+a) For each of the sub-problems you\'92ve discussed in #2, what is a possible solution?\
+4) Evaluate each potential solution\
+a) Does each solution meet the goals?\
+b) Will each solution work for ALL cases?\
+5) Choose a solution and develop a plan to implement it.\
+a) Explain the solution in full.\
+b) Describe some test cases you tried out to make sure it works. (You can include\
+drawings and diagrams as part of your explanation as long as they are clearly communicating the solution).\
+\
+Predicting Fingers:\
+A little girl counts using the fingers of her left hand as follows: She starts by calling her thumb 1, the first finger 2, middle finder 3, ring finger 4, and little finger 5. Then she reverses direction, calling the ring finger 6, middle finger 7, first finger 8 and thumb 9, after which she calls her first finger 10 and so on. If she continues to count in this manner, on which finger will she stop?\
+\pard\tx20\tx380\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\li360\fi-360
+\ls1\ilvl0
+\fs24 \cf0 \kerning1\expnd0\expndtw0 {\listtext	a)	}
+\fs22 \expnd0\expndtw0\kerning0
+What if the girl counts from 1 to 10 \
+\ls1\ilvl0
+\fs24 \kerning1\expnd0\expndtw0 {\listtext	b)	}
+\fs22 \expnd0\expndtw0\kerning0
+What if the girl counts from 1 to 100 \
+\ls1\ilvl0
+\fs24 \kerning1\expnd0\expndtw0 {\listtext	c)	}
+\fs22 \expnd0\expndtw0\kerning0
+What if the girl counts from 1 to 1000\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
+\cf0 \expnd0\expndtw0\kerning0
+\
+1)Define the problem\
+	The overall goal \
+c) What is the overall goal?\
+2) Break the problem apart\
+a) What are the constraints? b) What are the sub-goals?\
+3) Identify potential solutions\
+a) For each of the sub-problems you\'92ve discussed in #2, what is a possible solution?\
+4) Evaluate each potential solution\
+a) Does each solution meet the goals?\
+b) Will each solution work for ALL cases?\
+5) Choose a solution and develop a plan to implement it.\
+a) Explain the solution in full.\
+b) Describe some test cases you tried out to make sure it works. (You can include\
+drawings and diagrams as part of your explanation as long as they are clearly communicating the solution).}
