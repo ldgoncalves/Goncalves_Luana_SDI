@@ -156,19 +156,28 @@ The constraint is that the little girl is only counting with her left hand using
 3) Identify potential solutions
 \b0 \expnd0\expndtw0\kerning0
 \
-Obvious thing that I have noticed \
+Obvious thing that I have noticed is that eighth number when going reverse always falls on the first finger. If you try counting a little bit after 8, you will get 16, 24, 32. On the forward direction, you start a 8 number pattern too. For example, 2 lands on the first finger. And when the little girl comes back around the number 10 and then 18 and then 26. They are all added by 8. So the best to figure out what figure lands on 10,100,1000 is by dividing them by 8.\
 
 \b \expnd0\expndtw0\kerning0
 4) Evaluate each potential solution
 \b0 \expnd0\expndtw0\kerning0
 \
-a) Does each solution meet the goals?\
-b) Will each solution work for ALL cases?\
+I think this solution will work with all cases. For example, we already now that 10 lands on the first finger. When you divide 10 by 8, you get 1 remainder 2. Whichever the remainder is, just match it with the number that fell on which finger. For example:\
+thumb:1\
+first: 2\
+middle: 3\
+ring: 4\
+little: 5\
+ring: 6\
+middle: 7\
+first: 8\
+thumb: 9\
 
 \b \expnd0\expndtw0\kerning0
 5) Choose a solution and develop a plan to implement it.
 \b0 \expnd0\expndtw0\kerning0
 \
-a) Explain the solution in full.\
-b) Describe some test cases you tried out to make sure it works. (You can include\
-drawings and diagrams as part of your explanation as long as they are clearly communicating the solution).}
+a) 10/8=1R2 first finger\
+b) 100/8=12R4 ring finger\
+c) 1000/8=125 first finger*\
+	* Even though in this equation the remainder is 0, 1000 is divisible evenly by 8, and as discussed previously with the sequence 8, 16, 24, 32\'85, eventually 1000 	would land on the first finger. }
