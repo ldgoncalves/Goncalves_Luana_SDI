@@ -13,56 +13,50 @@ January 8, 2015\
 Scalable Data Infrastructures, Section 03\
 Assignment: Problem Solving\
 \
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\sl360\slmult1
 
 \b \cf0 \expnd0\expndtw0\kerning0
 A Cat, a Parrot, and a Bag of Seed:\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
 
-\b0 \cf0 \expnd0\expndtw0\kerning0
+\b0 \expnd0\expndtw0\kerning0
 A man finds himself on a riverbank with a cat, a parrot and a bag of seed. He needs to transport all three to the other side of the river in his boat. However, the boat has room for only the man himself and one other item (either the cat, parrot or seed). In his absence, the cat could eat the parrot, and the parrot would eat the bag of seed. Show how he can get all the passengers to the other side, without leaving the wrong ones alone together.\
 \
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
 
-\b \cf0 \expnd0\expndtw0\kerning0
+\b \expnd0\expndtw0\kerning0
 1)Define the problem\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
 
-\b0 \cf0 \expnd0\expndtw0\kerning0
+\b0 \expnd0\expndtw0\kerning0
 The overall goal here is to transport all three passengers over to the other side of the river, however the boat can only take the man and one other passenger. Initial insight I can offer is that the man can start taking the parrot first. \
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
 
-\b \cf0 \expnd0\expndtw0\kerning0
+\b \expnd0\expndtw0\kerning0
 2) Break the problem apart\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
 
-\b0 \cf0 \expnd0\expndtw0\kerning0
+\b0 \expnd0\expndtw0\kerning0
 The major constraint here is that the cat can\'92t be alone with the parrot and the parrot can\'92t be alone with the bag of seed. And that goes the same with the other side of the shore. Even if we take the bird first, we have to make sure the next item won\'92t conflict with the constraints when the man goes back.\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
 
-\b \cf0 \expnd0\expndtw0\kerning0
+\b \expnd0\expndtw0\kerning0
 3) Identify potential solutions\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
 
-\b0 \cf0 \expnd0\expndtw0\kerning0
+\b0 \expnd0\expndtw0\kerning0
 One solution I can think of is that the man will have to take multiple trips. He will have start with the parrot to drop him off on the other side. When we return for cat and seed, he can choose either one. From there he drops off the item but takes the parrot back with him. Back at the starting point, he will take the item he left behind and then leave the parrot at the starting point. He drops the item and returns for the parrot.\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
 
-\b \cf0 \expnd0\expndtw0\kerning0
+\b \expnd0\expndtw0\kerning0
 4) Evaluate each potential solution\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
 
-\b0 \cf0 \expnd0\expndtw0\kerning0
+\b0 \expnd0\expndtw0\kerning0
 The only reason I think this is a probable solution because the items cat and seed are not a threat to each other but the cat is to the parrot and the parrot is to the seed. But arranging the departure in a sequence parrot, cat or seed, parrot, cat or seed, and then parrot guarantees on both ends of the shore that all passengers are safe from each other.\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
 
-\b \cf0 \expnd0\expndtw0\kerning0
+\b \expnd0\expndtw0\kerning0
 5) Choose a solution and develop a plan to implement it.
 \b0 \expnd0\expndtw0\kerning0
 \
 The man will be taking the parrot initially to the end point. Then he will return and choose either cat or seed. For the purpose of illustration I will choose cat. He will take the cat to the end point, however he will take the parrot back with him. Once he reaches back to the starting point, he will leave the parrot behind and take the bag of seed with him. He will leave the the seed with the cat once again at the end point, and returns one more time to pick up the parrot. With that he returns to the end point with the parrot and the other two items. \
 \
-Socks in the Dark:\
+
+\b \expnd0\expndtw0\kerning0
+Socks in the Dark:
+\b0 \expnd0\expndtw0\kerning0
+\
 There are 20 socks in a drawer: 5 pairs of black socks, 3 pairs of brown and 2 pairs of white. You select the socks in the dark and can check them only after a selection has been made. What is the smallest number of socks you need to select to guarantee getting the following:\
 a) At least one matching pair\
 b) At least one matching pair of each color.\
@@ -70,28 +64,65 @@ b) At least one matching pair of each color.\
 
 \b \expnd0\expndtw0\kerning0
 1) Define the problem\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
 
-\b0 \cf0 \expnd0\expndtw0\kerning0
+\b0 \expnd0\expndtw0\kerning0
 The overall goal here is to select 
 \b \expnd0\expndtw0\kerning0
  
 \b0 \expnd0\expndtw0\kerning0
 at one matching pair and at least one matching pair of each color with the minimal amount of socks. The initial insight I can offer is to go through the worst case scenario and use probability from there. \
-2) Break the problem apart\
+
+\b \expnd0\expndtw0\kerning0
+2) Break the problem apart
+\b0 \expnd0\expndtw0\kerning0
+\
 The biggest constraint here is that you have to make the selection of socks in the dark at once and can see what colors you got that will make a pair, as well as how many you would have to take to make a pair for black, brown, white in the light. The probability for just choosing socks generally to make a pair with any color is easier than getting an exact color the want for a pair. \
-3) Identify potential solutions\
-For the first part of the question, taking just two socks out the drawer has a high probability that you will get two mismatching socks. So \
-4) Evaluate each potential solution\
+
+\b \expnd0\expndtw0\kerning0
+3) Identify potential solutions
+\b0 \expnd0\expndtw0\kerning0
 \
-5) Choose a solution and develop a plan to implement it.\
-a) Explain the solution in full.\
-b) Describe some test cases you tried out to make sure it works. (You can include\
-drawings and diagrams as part of your explanation as long as they are clearly communicating the solution).\
+For answer 
+\b \expnd0\expndtw0\kerning0
+a)
+\b0 \expnd0\expndtw0\kerning0
+ you should pull out at least four socks. For answer 
+\b \expnd0\expndtw0\kerning0
+b)
+\b0 \expnd0\expndtw0\kerning0
+ in order to get a matching pair from each color you should pull out 18 socks. \
+
+\b \expnd0\expndtw0\kerning0
+4) Evaluate each potential solution
+\b0 \expnd0\expndtw0\kerning0
 \
-Predicting Fingers:\
+\expnd0\expndtw0\kerning0
+For the first part of the question, taking just two socks out the drawer has a high probability that you will get two mismatching socks. Even if you only pull out three, there is a high-risk that you might pull out one from each color. So the least number you should pull out is 4.\
+For the second part, there are 10 black socks, 6 brown socks, and 4 white socks from the pairs. I say the least would have to be 18 socks to eliminate the worst case scenario of getting all black socks or brown socks in pairs since there are more of them then white.\expnd0\expndtw0\kerning0
+\
+
+\b \expnd0\expndtw0\kerning0
+5) Choose a solution and develop a plan to implement it.
+\b0 \expnd0\expndtw0\kerning0
+\
+
+\b \expnd0\expndtw0\kerning0
+a)  
+\b0 \expnd0\expndtw0\kerning0
+Least number to choose is 4 because there are three colors of socks: black, brown, and white. If the first three don\'92t make a pair, then the fourth sock will match one of the first three you pulled out. \
+
+\b \expnd0\expndtw0\kerning0
+b) 
+\b0 \expnd0\expndtw0\kerning0
+Least number to select is 18 socks to get each color it\'92s own matching pair and so we can eliminate the worst case scenario. There are 10 black socks, 6 brown socks, and 4 white socks. If you go for 10 socks, however, what if you the first 10 you selected come out all black? Then let\'92s say you select 3 more because there are only brown and white left to get a matching pair out of one those colors.  Then the next 3 to select brown or white pair. But what if all 6 are brown? So we would have to take out two more which would guarantee a white pair. The number 18 would take care of the worst case scenario and help with the selection of getting all the pairs match with it\'92s preferred color.\
+\
+
+\b \expnd0\expndtw0\kerning0
+Predicting Fingers:
+\b0 \expnd0\expndtw0\kerning0
+\
 A little girl counts using the fingers of her left hand as follows: She starts by calling her thumb 1, the first finger 2, middle finder 3, ring finger 4, and little finger 5. Then she reverses direction, calling the ring finger 6, middle finger 7, first finger 8 and thumb 9, after which she calls her first finger 10 and so on. If she continues to count in this manner, on which finger will she stop?\
-\pard\tx20\tx380\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\li360\fi-360
+\pard\tx20\tx380\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\li360\fi-360\sl360\slmult1
 \ls1\ilvl0
 \fs24 \cf0 \kerning1\expnd0\expndtw0 {\listtext	a)	}
 \fs22 \expnd0\expndtw0\kerning0
@@ -104,11 +135,11 @@ What if the girl counts from 1 to 100 \
 \fs24 \kerning1\expnd0\expndtw0 {\listtext	c)	}
 \fs22 \expnd0\expndtw0\kerning0
 What if the girl counts from 1 to 1000\
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\sl360\slmult1
 \cf0 \expnd0\expndtw0\kerning0
 \
 1)Define the problem\
-	The overall goal \
+The overall goal is to determine which number will land in which finger. \
 c) What is the overall goal?\
 2) Break the problem apart\
 a) What are the constraints? b) What are the sub-goals?\
