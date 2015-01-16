@@ -41,20 +41,21 @@ console.log ("Each person ate " + result + " slices of pizza at the party");
 
 // Assume guests get whole slices, how many whole slices will Sparky feast on?
 
-var a = 10; //number of slices
-var b = 29; //number of people
-var c = 5; //number of pizza
-
+var d = 10; //number of slices
+var e = 29; //number of people
+var f = 5; //number of pizza
+var g = 9; //number of people not eating pizza
+var h = 20; //number of people who ate
 
 //multiple a with c to get total of slices
 
-var totalSlices = a % b;
+var slices = (d * f) / (e - g);
 
+slices *= h;
 
+var sparkySlices = slices - (2*h);
 
-//Now calculate the remainder of slices
-
-console.log(totalSlices);
+console.log("Sparky got " + sparkySlices + " slices of pizza.");
 
 //Average shopping bill: You are budgeting your money for the year and must calculate your average weekly grocery shopping spending over the past five weeks. Store the past five grocery totals as a list in an array. Create an expression that will use the items in the array to calculate the average amount spent on groceries.Please note: there should only be one given for this problem set, the array holding the five weekly totals.  You should be able to access the array using the array access notation discussed earlier in the course.
 
