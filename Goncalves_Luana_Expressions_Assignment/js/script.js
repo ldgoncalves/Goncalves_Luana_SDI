@@ -10,7 +10,7 @@ Expressions Assignment
 
 //Calculating the bank's percentage markup of a currency's exchange rate you want to purchase in US dollars.
 
- alert("We are calculating the bank's percentage markup of a currency's exchange rate you want to purchase in USD. Also we will compare how much USD you will need to purchase a certain currency with the bank rate."); //introduction of the calculator
+ alert("We are calculating the bank's percentage markup of a currency's exchange rate you want to purchase in USD. Also we will compare how much USD you will need to purchase a certain currency with that bank rate."); //introduction of the calculator
 
  var bankExchange = prompt("Please enter the bank's exchange rate:"); //for user to input bank rate of the currency they are planning to purchase
 console.log (bankExchange);
