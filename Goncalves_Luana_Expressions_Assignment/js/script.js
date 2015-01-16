@@ -18,11 +18,12 @@ console.log (bankExchange);
  var marketExchange = prompt("Please enter the market exchange:");//for user to input market rate of the currency they are planning to purchase
 console.log(marketExchange);
 
+ //Calculate with the information that the user has given to figure out percentage markup. 
  var exchangeCal = [bankExchange,marketExchange];
  var percentage = exchangeCal[0] - exchangeCal[1];
  percentage /= marketExchange;
 
- //var percentage = (bankExchange - marketExchange)/marketExchange;//the equation to figure the out the percentage markup
+ //var percentage = (bankExchange - marketExchange)/marketExchange; this is the equation to figure the out the percentage markup, however as seen above, I replaced it in a form of array and another assignment operator.
 
  percentage *=100;// assignment operator to convert the decimal into percent
 
