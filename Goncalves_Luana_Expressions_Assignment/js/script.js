@@ -29,8 +29,9 @@ console.log(marketExchange);
 console.log(amount);// user enters amount they need in foreign currency to be calculated with bank rate.
 
  var currency = prompt("Is the foreign currency more expensive than the USD? \nYes or No"); // prompts a condition to determine the correct equation to use for USD amount.
+ console.log(currency);
 
- //begin boolean condition 
+ //begin boolean condition
 
  if (currency === "yes") {
   var total1 = amount * bankExchange;
@@ -43,3 +44,6 @@ else
   console.log(total2);
   alert("You will need $" + parseInt(total2));
  }
+
+ //Tested the code condition which works with the calculations correctly. Entered amount for 2000. Typed yes, and then it multiples the amount with the rate I inputted earlier 2.75, giving me $5500. When entered the condition no, I got $727, which is the result of dividing 2.75 by 2000.
+ 
