@@ -26,9 +26,11 @@ console.log(marketExchange);
 
  //Now we are going to calculate how much the user will need to purchase in USD
  var amount = prompt ("Now we will calculate how much USD you will need. Please enter desired foreign currency you need:");
-console.log(amount);
+console.log(amount);// user enters amount they need in foreign currency to be calculated with bank rate.
 
- var currency = prompt("Is the foreign currency more expensive than the USD? \nYes or No");
+ var currency = prompt("Is the foreign currency more expensive than the USD? \nYes or No"); // prompts a condition to determine the correct equation to use for USD amount.
+
+ //begin boolean condition 
 
  if (currency === "yes") {
   var total1 = amount * bankExchange;
