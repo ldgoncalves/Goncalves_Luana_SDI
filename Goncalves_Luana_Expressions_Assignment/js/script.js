@@ -18,9 +18,13 @@ console.log (bankExchange);
  var marketExchange = prompt("Please enter the market exchange:");//for user to input market rate of the currency they are planning to purchase
 console.log(marketExchange);
 
- var percentage = (bankExchange - marketExchange)/marketExchange;//the equation to figure the out the percentage markup
+ var exchangeCal = [bankExchange,marketExchange];
+ var percentage = exchangeCal[0] - exchangeCal[1];
+ percentage /= marketExchange;
 
- percentage *=100;// assignment operator
+ //var percentage = (bankExchange - marketExchange)/marketExchange;//the equation to figure the out the percentage markup
+
+ percentage *=100;// assignment operator to convert the decimal into percent
 
   alert("The percentage markup of your exchange rate is  " + parseInt(percentage) + "%");//user's percentage mark up result
 console.log(percentage);//Tested out to make sure the prompts and the calculation works. Used 2.75 for bank rate and 2.64 for market rate.
@@ -48,4 +52,3 @@ else
 
  //Tested the code condition which works with the calculations correctly. Entered amount for 2000. Typed yes, and then it multiples the amount with the rate I inputted earlier 2.75, giving me $5500. When entered the condition no, I got $727, which is the result of dividing 2.75 by 2000.
 
- 
