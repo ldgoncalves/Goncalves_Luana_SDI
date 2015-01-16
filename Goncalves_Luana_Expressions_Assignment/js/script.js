@@ -15,10 +15,10 @@ Expressions Assignment
  var bankExchange = prompt("Please enter the bank's exchange rate:"); //for user to input bank rate of the currency they are planning to purchase
 console.log (bankExchange);
 
- var marketExchange = prompt("Please enter the market exchange:");//for user to input market rate of the currency they are planning to purchase
+ var marketExchange = prompt("Please enter the market exchange rate:");//for user to input market rate of the currency they are planning to purchase
 console.log(marketExchange);
 
- //Calculate with the information that the user has given to figure out percentage markup. 
+ //Calculate with the information that the user has given to figure out percentage markup.
  var exchangeCal = [bankExchange,marketExchange];
  var percentage = exchangeCal[0] - exchangeCal[1];
  percentage /= marketExchange;
