@@ -56,5 +56,40 @@ var totalSlices = a % b;
 
 console.log(totalSlices);
 
+//Average shopping bill: You are budgeting your money for the year and must calculate your average weekly grocery shopping spending over the past five weeks. Store the past five grocery totals as a list in an array. Create an expression that will use the items in the array to calculate the average amount spent on groceries.Please note: there should only be one given for this problem set, the array holding the five weekly totals.  You should be able to access the array using the array access notation discussed earlier in the course.
+
+
+var groceryBudget = [35,32,38,32,29];// list of totals per week spent
+
+var total = (groceryBudget[0] + groceryBudget[1] + groceryBudget[2] +groceryBudget[3] + groceryBudget[4]);//an array of the total for 5 weeks
+
+var average = total/5; //divide from the total above with 5
+
+
+console.log("You have spent a total of $" + total + " on groceries over 5 weeks. That is an average of $" + average + " per week.");
+
+//Discounts: Calculate the discounted price for an item. Create an expression that will calculate the discounted price with and without sales tax. (It is acceptable for the result to have more than two digits after the decimal. $345.896 for example.)
+
+//Calculate a discounted price for a video game.
+
+var originalPrice = 69.99;
+
+var discountOnly = .15;
+
+var salesTax = .06;
+
+discount *= originalPrice;
+
+var discountResult = originalPrice - discountOnly;
+
+//console.log(discountResult);
+
+var withTax = discountResult * salesTax;
+withTax += discountResult
+
+//console.log(withTax);
+
+console.log("“Your video game was originally $" + originalPrice + ", but after a" + % discount, it is now $X without tax, and $X with tax.”")
+
 
 
