@@ -74,22 +74,25 @@ console.log("You have spent a total of $" + total + " on groceries over 5 weeks.
 
 var originalPrice = 69.99;
 
-var discountOnly = .15;
+var discountItem =15
+
+var discountPercent = .15;
 
 var salesTax = .06;
 
-discount *= originalPrice;
+var discountOnly = discountPercent * originalPrice;
 
 var discountResult = originalPrice - discountOnly;
 
 //console.log(discountResult);
 
 var withTax = discountResult * salesTax;
-withTax += discountResult
+withTax += discountResult;
 
 //console.log(withTax);
 
-console.log("“Your video game was originally $" + originalPrice + ", but after a" + % discount, it is now $X without tax, and $X with tax.”")
+console.log("Your video game was originally $" + originalPrice + ", but after a " + discountItem +"% discount, it is now $" + discountResult +" without tax, and $" + withTax +" with tax.");
+
 
 
 
