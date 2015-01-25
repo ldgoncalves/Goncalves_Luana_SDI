@@ -53,6 +53,8 @@ Conditionals Assignment
 
  help = (result > savings)? prompt("Would you like to keep the your savings and calculate how many months you need to extend? \n Please enter Yes or No:") : alert("Have fun in " + months + " months!");
 
+ /* Tested this by entering the savings that is the highest to get the alert "Have fun in X months!". Also tested to get the prompt for the person with the lowest savings if they would like to continue with another equation. Everything is the clear*/
+
  //This here will determine if the prompted user said yes or no. If yes, we will continue with the month extension calculation, if no, we will wish them luck.
 
  if (help == "yes" || help == "Yes"){ //added logical operators here for the purpose if the user enter Yes either in lowercase or uppercase.
@@ -63,4 +65,8 @@ Conditionals Assignment
   console.log("Good luck in your savings!");
   alert("Good luck in your savings!");
  }
+
+ /* Tested the "help" prompts by typing in "yes" and then "Yes" and also "no" and "No" to make sure they the functions they need to do.*/
+
+ //Did one last test with budget=2000 months=12 and savings=200, and then savings at 80. Greenlight! 
 
