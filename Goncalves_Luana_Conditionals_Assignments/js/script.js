@@ -59,8 +59,8 @@ Conditionals Assignment
 
  if (help == "yes" || help == "Yes"){ //added logical operators here for the purpose if the user enter Yes either in lowercase or uppercase.
   var extension = budget/savings - months; //equation for month extension
-  console.log("You have to save for an additional " + extension + " months.");
-  alert("You have to save for an additional " + extension + " months.");
+  console.log("You have to save for additional " + extension + " months.");
+  alert("You have to save for additional " + extension + " months.");
  }else if (help == "no" || help == "No"){ //added logical operators here for the purpose if the user enter No either in lowercase or uppercase.
   console.log("Good luck in your savings!");
   alert("Good luck in your savings!");
