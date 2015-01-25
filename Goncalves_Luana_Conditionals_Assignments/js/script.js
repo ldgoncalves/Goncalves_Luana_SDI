@@ -51,7 +51,7 @@ Conditionals Assignment
 
  var help; //This will either prompt the user to continue the calculation, if not, wish them fun on trip.
 
- help = (result > savings)? prompt("Would you like to keep the your savings and calculate how many months you need to extend? \n Please enter Yes or No:") : alert("Have fun in " + months + " months!");
+ help = (result > savings)? prompt("Would you like to keep your savings amount and calculate how many months you will need to extend instead? \n Please enter Yes or No:") : alert("Have fun in " + months + " months!");
 
  /* Tested this by entering the savings that is the highest to get the alert "Have fun in X months!". Also tested to get the prompt for the person with the lowest savings if they would like to continue with another equation. Everything is the clear*/
 
@@ -68,5 +68,5 @@ Conditionals Assignment
 
  /* Tested the "help" prompts by typing in "yes" and then "Yes" and also "no" and "No" to make sure they the functions they need to do.*/
 
- //Did one last test with budget=2000 months=12 and savings=200, and then savings at 80. Greenlight! 
+ //Did one last test with budget=2000 months=12 and savings=200, and then savings at 80. Greenlight!
 
