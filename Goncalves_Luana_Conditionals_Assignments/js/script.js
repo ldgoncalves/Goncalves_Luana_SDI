@@ -49,15 +49,17 @@ Conditionals Assignment
 
 //Now we will prompt the user with the least savings and ask if they would like to calculate how many months they need to extend with their current savings a month.
 
- var help;
+ var help; //This will either prompt the user to continue the calculation, if not, wish them fun on trip.
 
- help = (result > savings)? prompt("Would you like to keep the your savings and calculate how many months you need to extend? \n Please enter Yes or No") : alert("Have fun in " + months + " months!");
+ help = (result > savings)? prompt("Would you like to keep the your savings and calculate how many months you need to extend? \n Please enter Yes or No:") : alert("Have fun in " + months + " months!");
 
- if (help == "yes" && "Yes"){
-  var extension = budget/savings - months;
+ //This here will determine if the prompted user said yes or no. If yes, we will continue with the month extension calculation, if no, we will wish them luck.
+
+ if (help == "yes" || help == "Yes"){ //added logical operators here for the purpose if the user enter Yes either in lowercase or uppercase.
+  var extension = budget/savings - months; //equation for month extension
   console.log("You have to save for an additional " + extension + " months.");
   alert("You have to save for an additional " + extension + " months.");
- }else if (help == "no" && "No"){
+ }else if (help == "no" || help == "No"){ //added logical operators here for the purpose if the user enter No either in lowercase or uppercase.
   console.log("Good luck in your savings!");
   alert("Good luck in your savings!");
  }
