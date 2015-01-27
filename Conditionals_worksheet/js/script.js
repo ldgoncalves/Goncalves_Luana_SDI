@@ -66,18 +66,13 @@ Conditionals Worksheet
  var ticket = 12;
  var discount = 7;
  var age = prompt("How old are you?");
- var time = prompt("What time is your movie?");
+ //var time = prompt("What time is your movie?");
 
- if (age <= 10 && age >= 55){
+ if (age <= 10 || age >= 55){
   console.log("The ticket price is $" + discount + ".");
   alert("The ticket price is $" + discount + ".");
- }if (!(age <= 10 && age >= 55)){
+ } else if (!(age <= 10 || age >= 55)){
   console.log("The ticket price is $" + ticket + ".");
   alert("The ticket price is $" + ticket + ".");
- }
-
- if (time == 3) {
-  console.log("The ticket price is $" + discount + ".");
-  alert("The ticket price is $" + discount + ".");
  }
 
