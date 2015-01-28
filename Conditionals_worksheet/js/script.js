@@ -10,7 +10,7 @@ Conditionals Worksheet
 
  //Group 1 Celsius to Fahrenheit converter
 
- /*alert("We are converting to either Celsius or Fahrenheit degrees."); //introduction of the calculator
+ alert("We are converting to either Celsius or Fahrenheit degrees."); //introduction of the calculator
 
  var degreeType = prompt("Which temperature are you looking to convert to?" + "\n Please enter \"C" + "\" for Celsius or \"F" + "\" for Fahrenheit."); //for user to input which degree type they would like to convert.
 
@@ -27,7 +27,7 @@ Conditionals Worksheet
   var final = (value - 32) * 5/9;
   console.log("The temperature is " + final + "\xB0 Celsius");
   alert("The temperature is " + final + "\xB0 Celsius");
- }*/
+ }
 
  /*Make sure the user has the correct username and password. If the username doesn’t match then a specific message for that should be printed to the console. If the password doesn’t match a message should appear for that, etc. Only one error message should appear.
 
@@ -45,7 +45,7 @@ Conditionals Worksheet
 //Group 2 Check the Login
 
 
- /*var userName = prompt("Full Sail University Email Login \nPlease enter username:");
+ var userName = prompt("Full Sail University Email Login \nPlease enter username:");
  var passWord = prompt("Please enter password:");
 
  if (userName == "kmicklos" && passWord == "funny54nana") {
@@ -58,7 +58,7 @@ Conditionals Worksheet
   console.log("Password does not match our records.");
   alert("Password does not match our records.");
  }
-*/
+
 
 
 //Group 3 Movie Ticket Price
@@ -66,13 +66,15 @@ Conditionals Worksheet
  var ticket = 12;
  var discount = 7;
  var age = prompt("How old are you?");
- //var time = prompt("What time is your movie?");
+ var time = prompt("What time is your movie?");
 
  if (age <= 10 || age >= 55){
   console.log("The ticket price is $" + discount + ".");
   alert("The ticket price is $" + discount + ".");
- } else if (!(age <= 10 || age >= 55)){
+ } else if (!(age <= 10 || age >= 55 || time == 3 || time == 4 || time == 5)){
   console.log("The ticket price is $" + ticket + ".");
-  alert("The ticket price is $" + ticket + ".");
+  alert("The ticket price is $" + ticket + ".");;
+ }else{
+  console.log("The ticket price is $" + discount + ".");
+  alert("The ticket price is $" + discount + ".");
  }
-
