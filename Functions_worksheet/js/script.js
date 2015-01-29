@@ -19,6 +19,14 @@ Functions Worksheet
   var circumference = 2 * pie * r;
   return circumference;
  }
- //the result to be printed out. 
+ //the result to be printed out.
  console.log("The circumference of the circle is " + total);
 
+//Stung!
+//Calculate how many bee stings are needed to kill an animal in a function.
+
+ var total = calcStings(40,8.666666667); //40 is the victim's weight and 8.666666667 is the bee stings per pound that can kill an animal.
+
+ function calcStings (weight, stings){
+
+ }
