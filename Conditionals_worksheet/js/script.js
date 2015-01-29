@@ -59,8 +59,6 @@ Conditionals Worksheet
   alert("Password does not match our records.");
  }
 
-
-
 //Group 3 Movie Ticket Price
 
  var ticket = 12;
@@ -73,8 +71,9 @@ Conditionals Worksheet
   alert("The ticket price is $" + discount + ".");
  } else if (!(age <= 10 || age >= 55 || time == 3 || time == 4 || time == 5)){
   console.log("The ticket price is $" + ticket + ".");
-  alert("The ticket price is $" + ticket + ".");;
+  alert("The ticket price is $" + ticket + ".");
  }else{
   console.log("The ticket price is $" + discount + ".");
   alert("The ticket price is $" + discount + ".");
  }
+
