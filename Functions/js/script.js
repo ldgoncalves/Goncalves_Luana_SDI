@@ -111,4 +111,4 @@ var a = calcArea(20, 30); //invoking
 
 console.log(a);
 
-//you have to define your function before invokinf
+//you have to define your function before invoking
