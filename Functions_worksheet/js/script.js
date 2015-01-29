@@ -28,5 +28,7 @@ Functions Worksheet
  var total = calcStings(40,8.666666667); //40 is the victim's weight and 8.666666667 is the bee stings per pound that can kill an animal.
 
  function calcStings (weight, stings){
-
+//calculation victim's weight / bee stings
+  var beeStings = weight / stings;
+  return beeStings;
  }
