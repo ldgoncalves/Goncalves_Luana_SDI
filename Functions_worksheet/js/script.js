@@ -25,10 +25,12 @@ Functions Worksheet
 //Stung!
 //Calculate how many bee stings are needed to kill an animal in a function.
 
- var total = calcStings(40,8.666666667); //40 is the victim's weight and 8.666666667 is the bee stings per pound that can kill an animal.
+ var total = calcStings(40,8.666666667); //40 pounds is the victim's weight and 8.666666667 is the bee stings per pound that can kill an animal.
 
- function calcStings (weight, stings){
+ function calcStings (weight, stings){ // parameters
 //calculation victim's weight / bee stings
   var beeStings = weight / stings;
   return beeStings;
  }
+//the result to be printed out.
+console.log("It takes " + parseInt(total) + " bee stings to kill this animal.");
