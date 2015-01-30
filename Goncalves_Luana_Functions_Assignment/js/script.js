@@ -50,3 +50,43 @@ Functions Assignment
  console.log("You need to save $" + parseInt(total) + " per month");
  alert("You need to save $" + parseInt(total) + " per month");
 
+ //now we will prompt the user if their event is a fundraiser event or not.
+
+ var fundEvent = prompt("Is fundraising involved in this event? \nPlease enter Yes or No:");
+
+ //Change all text string to lowercase
+
+fundEvent = fundEvent.toLowerCase();
+
+ //validate this prompt
+
+while(fundEvent !="yes" && fundEvent !="no"){
+
+ //reprompt
+ fundEvent = prompt("Only type in yes or no. Is this a fundraising event?");
+}
+
+ if(fundEvent === "yes"){
+  var fundraising = prompt("Please enter goal to fundraise:");
+
+  while(fundraising==="" || isNaN(fundraising)){
+   //reprompt user
+   fundraising = prompt("Please do not leave blank and only use numbers! \nPlease enter the amount you need to fundraise:");
+  }
+
+  var fundAmount = function(guestNum, fundraisingNum){
+  var amount = fundraisingNum / guestNum;
+   return amount;
+  }
+
+  var donation = fundAmount(guest,fundraising);
+  console.log("You need each guest to donate $" + parseInt(donation) + " to meet your fundraising goal.");
+  alert("You need each guest to donate $" + parseInt(donation) + " to meet your fundraising goal.");
+
+ }else if(fundEvent === "no"){
+  alert("Good luck and have a great event!")
+ }
+
+
+
+
