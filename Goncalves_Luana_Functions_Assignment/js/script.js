@@ -36,3 +36,12 @@ Functions Assignment
   //reprompt user
   months = prompt("Please do not leave blank and only use numbers! \nPlease enter the number of months you have until your event:");
  }
+
+ var total = savingsMonthly(guest,budget,months);
+
+ function savingsMonthly(guestNum,budgetNum,monthsNum){
+  var monthly = guestNum * budgetNum / monthsNum;
+  return monthly;
+ }
+ console.log(total);
+
