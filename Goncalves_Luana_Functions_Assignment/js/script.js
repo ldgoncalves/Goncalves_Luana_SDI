@@ -37,11 +37,16 @@ Functions Assignment
   months = prompt("Please do not leave blank and only use numbers! \nPlease enter the number of months you have until your event:");
  }
 
- var total = savingsMonthly(guest,budget,months);
+ //validated each loop by leaving blank or entering a string instead.
+
+ var total = savingsMonthly(guest,budget,months); //invocation of first function
 
  function savingsMonthly(guestNum,budgetNum,monthsNum){
+  //calculation to give the total of how much the user should save per month
+
   var monthly = guestNum * budgetNum / monthsNum;
   return monthly;
  }
- console.log(total);
+ console.log("You need to save $" + parseInt(total) + " per month");
+ alert("You need to save $" + parseInt(total) + " per month");
 
