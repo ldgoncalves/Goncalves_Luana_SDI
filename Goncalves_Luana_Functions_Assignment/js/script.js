@@ -14,6 +14,25 @@ Functions Assignment
 
  //Let's prompt the user with three questions first.
 
+ alert("Hello! We will be calculating how much you will need to save for your event.")
+
  var guest = prompt("How many guests will attend your event?");
+
+ while(guest=="" || isNaN(guest)){
+  //reprompt user
+  guest = prompt("Please do not leave blank and only use numbers! \n Please enter the number of guests that will attending your event:");
+ }
+
  var budget = prompt("How much are you willing to spend per guest?");
+
+ while(budget=="" || isNaN(budget)){
+  //reprompt user
+  guest = prompt("Please do not leave blank and only use numbers! \n Please enter the amount you are willing to spend per guest:");
+ }
+
  var months = prompt("How many months you have until event?");
+
+ while(months=="" || isNaN(months)){
+  //reprompt user
+  guest = prompt("Please do not leave blank and only use numbers! \n Please enter the number of months you have until your event:");
+ }
