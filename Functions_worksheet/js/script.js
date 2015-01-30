@@ -15,8 +15,8 @@ Functions Worksheet
 
  var total = calcCircle(3.14,10); //argument - establishing pie and radius variable
 
- function calcCircle (pie, r){ //parameters
-  var circumference = 2 * pie * r;
+ function calcCircle (Pi, r){ //parameters
+  var circumference = 2 * Pi * r;
   return circumference;
  }
  //the result to be printed out.
