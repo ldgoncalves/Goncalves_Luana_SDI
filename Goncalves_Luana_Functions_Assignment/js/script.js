@@ -66,13 +66,20 @@ while(fundEvent !="yes" && fundEvent !="no"){
  fundEvent = prompt("Only type in yes or no. Is this a fundraising event?");
 }
 
+ // Now here, depending on what the user inputs, if yes, a prompt and function will follow through to calculate fundraising goal. If no, an alert will come up wishing user luck on event.
+
  if(fundEvent === "yes"){
   var fundraising = prompt("Please enter goal to fundraise:");
 
+  //validate prompt
+
   while(fundraising==="" || isNaN(fundraising)){
+
    //reprompt user
    fundraising = prompt("Please do not leave blank and only use numbers! \nPlease enter the amount you need to fundraise:");
   }
+
+  //function begins here to find out estimate donation per guest
 
   var fundAmount = function(guestNum, fundraisingNum){
   var amount = fundraisingNum / guestNum;
@@ -80,12 +87,18 @@ while(fundEvent !="yes" && fundEvent !="no"){
   }
 
   var donation = fundAmount(guest,fundraising);
+
+  //printout
   console.log("You need each guest to donate $" + parseInt(donation) + " to meet your fundraising goal.");
   alert("You need each guest to donate $" + parseInt(donation) + " to meet your fundraising goal.");
 
  }else if(fundEvent === "no"){
   alert("Good luck and have a great event!")
  }
+
+
+ //This ends the calculator. Tested using 200 guests, 50 for budget and 12 months. Fundraising goal I used 1000.
+
 
 
 
